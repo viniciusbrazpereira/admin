@@ -4,14 +4,17 @@ import {NgModule} from '@angular/core';
 import {TranslateModule, TranslateLoader} from '@ngx-translate/core';
 import {MatSelectModule} from '@angular/material';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import {HttpClientModule, HttpClient} from '@angular/common/http';
+import {HttpClientModule, HttpClient, HTTP_INTERCEPTORS} from '@angular/common/http';
 import {TranslateHttpLoader} from '@ngx-translate/http-loader';
+
+
+import {HttpInterceptingHandler} from "./handler/HttpInterceptingHandler"
 
 import {AppComponent} from './app.component';
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(http: HttpClient) {
-    return new TranslateHttpLoader(http);
+    return new TranslateHttpLoader(http, './assets/i18n/', '.json');
 }
 
 @NgModule({
@@ -22,6 +25,7 @@ export function HttpLoaderFactory(http: HttpClient) {
     BrowserModule,
     MatSelectModule,
     BrowserAnimationsModule,
+    HttpClientModule,
     TranslateModule.forRoot({
         loader: {
             provide: TranslateLoader,
@@ -30,7 +34,9 @@ export function HttpLoaderFactory(http: HttpClient) {
         }
     })
   ],
-  providers: [],
+  providers: [
+    {provide: HTTP_INTERCEPTORS, useClass: HttpInterceptingHandler, multi: true},
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
