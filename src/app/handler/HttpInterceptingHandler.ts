@@ -10,11 +10,10 @@ import { HTTP_INTERCEPTORS } from '@angular/common/http';
 
 @Injectable()
 export class HttpInterceptingHandler implements HttpInterceptor {
-    intercept(req: HttpRequest<any>, next: HttpHandler): Observable<HttpEvent<any>> {
-      let dupReq = req.clone({
-          headers: req.headers.set('key', 'DCtbqRXC8L'),
+    intercept(request: HttpRequest<any>, next: HttpHandler): Observable<HttpEvent<any>> {
+      let dupRequest = request.clone({
+          headers: request.headers.set('key', 'DCtbqRXC8L'),
       });
-      console.log("PAssou aqui");
-      return next.handle(dupReq);
+      return next.handle(dupRequest);
     }
 }
