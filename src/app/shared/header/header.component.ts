@@ -4,8 +4,7 @@ import {NgbModal, ModalDismissReasons} from '@ng-bootstrap/ng-bootstrap';
 import {TranslateService} from '@ngx-translate/core';
 import {Subscription} from 'rxjs';
 import {filter} from 'rxjs/operators';
-import {AuthenticationService} from '../../services/authentication.service';
-import {GlobalEventService, GlobalEventName} from '../../services/globalEvent.service';
+
 
 interface IBreadcrumb {
   label: string;
@@ -26,7 +25,7 @@ export class HeaderComponent implements OnInit, OnDestroy {
     // titulo apresentado no header
     title: String = "";
 
-    // indica que a janela de confirmação de 
+    // indica que a janela de confirmação de
     // logout deve ser apresentada
     state = {
         showLogout: false
@@ -38,16 +37,17 @@ export class HeaderComponent implements OnInit, OnDestroy {
     constructor(
         private activatedRoute: ActivatedRoute,
         private router: Router,
-        private authenticationService: AuthenticationService,
+        //private authenticationService: AuthenticationService,
         private modalService: NgbModal,
         private translate: TranslateService) {
 
         this.breadcrumbs = [];
 
+        /*
         this.logoutListener = GlobalEventService.subscribe(GlobalEventName.ON_LOGOUT, data => {
             this.state.showLogout = true;
         });
-
+        */
     }
 
 
@@ -67,7 +67,7 @@ export class HeaderComponent implements OnInit, OnDestroy {
             key = this.buildTitle(this.activatedRoute.root);
             this.title = this.translateText(key);
         });
-        
+
     }
 
     private translateText(key){
@@ -85,7 +85,7 @@ export class HeaderComponent implements OnInit, OnDestroy {
     }
 
     logout() {
-        this.authenticationService.logout();
+        //this.authenticationService.logout();
         this.router.navigate(['/login']);
     }
 
@@ -95,7 +95,7 @@ export class HeaderComponent implements OnInit, OnDestroy {
 
     private buildBreadcrumbs(route: ActivatedRoute, url: string="", breadcrumbs: IBreadcrumb[]=[]): IBreadcrumb[] {
 
-        // nome da propriedade que deve 
+        // nome da propriedade que deve
         // ser configurada na rota
         const ROUTE_DATA_BREADCRUMB = "breadcrumb";
 
@@ -114,7 +114,7 @@ export class HeaderComponent implements OnInit, OnDestroy {
                 continue;
             }
 
-            // verifica se a propriedade "breadcrumb" 
+            // verifica se a propriedade "breadcrumb"
             // foi configurada para essa rota
             if (!child.snapshot.data.hasOwnProperty(ROUTE_DATA_BREADCRUMB)) {
                 return this.buildBreadcrumbs(child, url, breadcrumbs);
@@ -147,13 +147,13 @@ export class HeaderComponent implements OnInit, OnDestroy {
 
     private buildTitle(route: ActivatedRoute, url: string="", title: string=""): string {
 
-        // nome da propriedade que deve 
+        // nome da propriedade que deve
         // ser configurada na rota
         const ROUTE_DATA_TITLE = "title";
 
         const children: ActivatedRoute[] = route.children;
 
-        // se não houver mais filhos retorna 
+        // se não houver mais filhos retorna
         // o titulo construído até aqui
         if (children.length === 0) {
             return title;
@@ -165,7 +165,7 @@ export class HeaderComponent implements OnInit, OnDestroy {
                 continue;
             }
 
-            // verifica se a propriedade "title" 
+            // verifica se a propriedade "title"
             // foi configurada para essa rota
             if (!child.snapshot.data.hasOwnProperty(ROUTE_DATA_TITLE)) {
                 return this.buildTitle(child, url, title);
@@ -174,7 +174,7 @@ export class HeaderComponent implements OnInit, OnDestroy {
             // obtem titulo configurado
             title = child.snapshot.data[ROUTE_DATA_TITLE];
 
-            // obtém recursivamente até o 
+            // obtém recursivamente até o
             // último nível de profundidade
             return this.buildTitle(child, url, title);
 

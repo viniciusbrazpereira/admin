@@ -16,6 +16,9 @@ import {AppComponent} from './app.component';
 import {AngularFontAwesomeModule} from 'angular-font-awesome';
 
 import { HomeComponent } from "./shared/home/home.component";
+import { SidebarComponent } from "./shared/sidebar/sidebar.component";
+import { HeaderComponent } from "./shared/header/header.component";
+import { ContentComponent } from "./shared/content/content.component";
 
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(http: HttpClient) {
@@ -25,7 +28,10 @@ export function HttpLoaderFactory(http: HttpClient) {
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    SidebarComponent,
+    HeaderComponent,
+    ContentComponent
   ],
   imports: [
     BrowserModule,

@@ -2,7 +2,11 @@ import { RouterModule, Routes } from "@angular/router";
 import { ModuleWithProviders } from "@angular/core";
 
 import { HomeComponent } from "./shared/home/home.component";
+import { SidebarComponent } from "./shared/sidebar/sidebar.component";
+import { HeaderComponent } from "./shared/header/header.component";
+import { ContentComponent } from "./shared/content/content.component";
 
+/*
 const appRoutes: Routes = [
 
     // App routes goes here here
@@ -10,7 +14,7 @@ const appRoutes: Routes = [
         path: '',
         component: HomeComponent,
         canActivate : [AuthGuard],
-        data : { 
+        data : {
           title: "header.title.home" ,
           // Permission view link menu
           layoutPermissionViewLink:['LAYOUT_LIST'],
@@ -46,9 +50,9 @@ const appRoutes: Routes = [
                 path: 'list',
                 component: LayoutListComponent,
                 data: {
-                  breadcrumb: 'header.breadcrumb.list-default', 
-                  title: 'header.title.layouts', 
-                  permission: ['LAYOUT_LIST'], 
+                  breadcrumb: 'header.breadcrumb.list-default',
+                  title: 'header.title.layouts',
+                  permission: ['LAYOUT_LIST'],
                   permissionBlockLayout: ['PROCESSING_MANAGEMENT']
                 },
                 canActivate: [AuthGuard, PermissionGuard]
@@ -136,6 +140,7 @@ const appRoutes: Routes = [
     // otherwise redirect to home
     {path: '**', redirectTo: ''}
 ];
+*/
 
 const routes: Routes = [
   { path: "**", component: HomeComponent }
