@@ -1,27 +1,44 @@
 {
-    "HELLO": "Bem vindo ao meu Angular application!<br/><strong>This is an amazing app which uses the latest technologies!</strong>"
     "shared": {
-		"sidebar": {
-			"navigation": "Upload",
-			"navigation-version": "Versão: ",
-			"navigation-title": "Navigation",
-			"navigation-link-home": "Home",
-			"navigation-link-dashboard": "Home",
-			"navigation-link-layouts": "Layouts",
-      		"navigation-link-process": "Processamento",
-      		"navigation-link-workflow": "Aprovações",
-			"navigation-link-plugin": "Plugins",
-      		"navigation-link-reports": "Relatórios",
-      		"navigation-link-logoff": "Sair"
-		},
-		"header": {
-			"message-box-title": "Sair",
-			"message-box-title-strong": "",
-			"message-box-title-interrogation": "?",
-			"message-box-content": "Tem certeza que deseja sair?",
-			"message-box-content2": "Pressione Não se quiser continuar trabalhando. Pressione Sim para sair do usuário atual.",
-			"message-box-yes": "Sim",
-			"message-box-no": "Não"
-		}
-	}
+      		"sidebar": {
+      			   "navigation": "Upload",
+      			   "navigation-version": "Versão: ",
+      			   "navigation-title": "Navigation",
+          		 "navigation-link-home": "Home",
+          		 "navigation-link-dashboard": "Home",
+          		 "navigation-link-layouts": "Layouts",
+               "navigation-link-process": "Processamento",
+               "navigation-link-workflow": "Aprovações",
+          		 "navigation-link-plugin": "Plugins",
+               "navigation-link-reports": "Relatórios",
+               "navigation-link-logoff": "Sair"
+      		},
+      		"header": {
+          			"message-box-title": "Sair",
+          			"message-box-title-strong": "",
+          			"message-box-title-interrogation": "?",
+          			"message-box-content": "Tem certeza que deseja sair?",
+          			"message-box-content2": "Pressione Não se quiser continuar trabalhando. Pressione Sim para sair do usuário atual.",
+          			"message-box-yes": "Sim",
+          			"message-box-no": "Não"
+      		}
+	   },
+     "header": {
+            "title": {
+      			   "home": "Home"
+        		},
+        		"breadcrumb":{
+          			"list-default": "List",
+          			"home": "Home",
+          			"error404": "Error404",
+          			"error403": "Error403",
+          			"layout": "Layout",
+          			"edit": "Edição",
+          			"template": "Template",
+          			"process": "Processamento",
+          			"workflow": "Aprovações",
+          			"plugins": "Plugins",
+          			"reports": "Relatórios"
+        		}
+  	  },
 }

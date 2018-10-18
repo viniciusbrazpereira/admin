@@ -143,7 +143,13 @@ const appRoutes: Routes = [
 */
 
 const routes: Routes = [
-  { path: "**", component: HomeComponent }
+  {
+    path: '',
+    component: HomeComponent,
+    data : {
+      title: "header.title.home" ,
+    }
+  }
 ];
 
 export const AdminRoutingModule: ModuleWithProviders = RouterModule.forRoot(routes);
