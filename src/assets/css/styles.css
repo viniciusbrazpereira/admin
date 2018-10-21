@@ -54,7 +54,7 @@
 .selectable.active, .selectable:hover {
   background: #f8f8f8 !important;
   color:#000 !important;
-  border:1px solid #4CAF50 !important;
+  border:1px solid #8dbeda !important;
 }
 
 .tab-content {
@@ -78,9 +78,9 @@
 }
 
 .btn-transparent:hover {
-  background-color:#4CAF50;
+  background-color:#8dbeda;
   color:#FFF !important;
-  border: 1px solid #4CAF50;
+  border: 1px solid #8dbeda;
 }
 
 .btn-transparent:hover:disabled {
@@ -91,9 +91,9 @@
 }
 
 .btn-outline-secondary:hover {
-  background-color:#4CAF50;
+  background-color:#8dbeda;
   color:#FFF !important;
-  border: 1px solid #4CAF50;
+  border: 1px solid #8dbeda;
 }
 
 .btn-outline-secondary:hover:disabled {
@@ -135,7 +135,7 @@
 
 .header-title {
   color: #fff;
-  background: #4CAF50 !important;
+  background: #8dbeda !important;
 }
 
 .header-title .navbar-collapse .header-title-text .nav-item h2 {
@@ -180,7 +180,7 @@
 .dropdown-item:hover {
   padding: 0.5rem 1rem !important;
   cursor:pointer;
-  background: #4CAF50;
+  background: #8dbeda;
   color: #fff;
 }
 
@@ -207,9 +207,9 @@
   display:none;
 }
 
-.nav-tabs > li.active > a, 
-.nav-tabs > li.active > a:hover, 
-.nav-tabs > li.active > a:focus, 
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:hover,
+.nav-tabs > li.active > a:focus,
 .nav-tabs > .dropdown.active.open > a:hover {
     margin-right: 5px !important;
     border: 0px !important;
@@ -221,7 +221,7 @@
     -webkit-transition: all 200ms ease !important;
     transition: all 200ms ease !important;
     background: #dee2e6 !important;
-    padding: 9px 15px !important;    
+    padding: 9px 15px !important;
 }
 
 .nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover {
@@ -233,14 +233,14 @@
     border-radius: 5px 0px 0px 0px !important;
 }
 
-.nav-tabs > li.active > a, 
-.nav-tabs > li.active > a:hover, 
-.nav-tabs > li.active > a:focus, 
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:hover,
+.nav-tabs > li.active > a:focus,
 .nav-tabs > .dropdown.active.open > a:hover {
     color: #495057 !important;
     background-color: #fff !important;
     border: 1px solid transparent !important;
-    border-color: #e9ecef #e9ecef #dee2e6 !important;    
+    border-color: #e9ecef #e9ecef #dee2e6 !important;
 }
 
 .btn-outline-success.disabled, .btn-outline-success:disabled {
@@ -258,7 +258,7 @@
 }
 
 .ui-autocomplete.ui-autocomplete-multiple .ui-autocomplete-multiple-container .ui-autocomplete-token {
-  background: #4CAF50 !important;
+  background: #8dbeda !important;
 }
 
 .ui-autocomplete-multiple-container.ui-widget.ui-inputtext.ui-state-default.ui-corner-all.ng-star-inserted.ui-state-focus
@@ -298,12 +298,12 @@
   color: #656d78;
 }
 
-.accordion-span{ 
+.accordion-span{
   color: #656d78;
 }
 
 .x-navigation li:hover {
-  background: #4CAF50;
+  background: #8dbeda;
   color: #fff;
   cursor: pointer;
   -webkit-transition: all 200ms ease;
@@ -314,21 +314,21 @@
 }
 
 .ngb-progressbar{
-  cursor: pointer;  
+  cursor: pointer;
 }
 
-.progress {      
+.progress {
   background-color: #dcefdc !important;
   border-color: #dcefdc !important;
 }
 
 .bg-success {
     color: #495057;
-    background-color: #4CAF50;    
+    background-color: #8dbeda;
 }
 
 .bg-success:houver {
-    color: #fff; 
+    color: #fff;
 }
 
 .cdk-global-overlay-wrapper, .cdk-overlay-container {
@@ -340,35 +340,35 @@
 }
 
 .mat-primary .mat-option.mat-selected:not(.mat-option-disabled) {
-    color: #4CAF50;
+    color: #8dbeda;
 }
 
 .mat-primary .mat-pseudo-checkbox-checked, .mat-primary .mat-pseudo-checkbox-indeterminate {
-    background: #4CAF50 !important;
+    background: #8dbeda !important;
 }
 
 .mat-select {
     font-family: 'Open Sans', 'sans-serif' !important;
-    color: #4CAF50 !important;
+    color: #8dbeda !important;
 }
 
 .mat-form-field.mat-focused .mat-form-field-label {
-	  color: #4CAF50 !important;
+	  color: #8dbeda !important;
 }
 
 .mat-form-field.mat-focused .mat-form-field-ripple {
-	  background-color: #4CAF50 !important;
+	  background-color: #8dbeda !important;
 }
 
 .mat-form-field.mat-focused.mat-primary .mat-select-arrow {
-	  color: #4CAF50 !important;
+	  color: #8dbeda !important;
 }
 
 .mat-option-custom:hover {
-	  background: #4CAF50 !important;
+	  background: #8dbeda !important;
     color: #fff !important;
 }
 
-.mat-option:first-child .mat-pseudo-checkbox{ 
-    display: none; 
+.mat-option:first-child .mat-pseudo-checkbox{
+    display: none;
 }
