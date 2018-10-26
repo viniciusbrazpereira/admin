@@ -20,6 +20,8 @@ import { SidebarComponent } from "./shared/sidebar/sidebar.component";
 import { HeaderComponent } from "./shared/header/header.component";
 import { ContentComponent } from "./shared/content/content.component";
 
+import { LoginComponent } from './modules/login/login.component';
+
 // AoT requires an exported function for factories
 export function HttpLoaderFactory(http: HttpClient) {
     return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -31,7 +33,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     HomeComponent,
     SidebarComponent,
     HeaderComponent,
-    ContentComponent
+    ContentComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,

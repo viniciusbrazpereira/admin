@@ -6,6 +6,8 @@ import { SidebarComponent } from "./shared/sidebar/sidebar.component";
 import { HeaderComponent } from "./shared/header/header.component";
 import { ContentComponent } from "./shared/content/content.component";
 
+import { LoginComponent } from './modules/login/login.component';
+
 /*
 const appRoutes: Routes = [
 
@@ -149,7 +151,9 @@ const routes: Routes = [
     data : {
       title: "header.title.home" ,
     }
-  }
+  },
+  //no layout routes
+  {path: 'login', component: LoginComponent},
 ];
 
 export const AdminRoutingModule: ModuleWithProviders = RouterModule.forRoot(routes);

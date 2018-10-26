@@ -41,4 +41,13 @@
           			"reports": "Relatórios"
         		}
   	  },
+      "modules":{
+            "login": {
+        			"title-strong": "Faça seu login",
+        			"title": "",
+        			"login": "Entrar",
+        			"forgot": "Esqueceu sua senha?",
+        			"footer": "Utilize sua senha do SESAME"
+        		}
+      }
 }
