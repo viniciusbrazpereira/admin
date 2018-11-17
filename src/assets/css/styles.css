@@ -54,7 +54,7 @@
 .selectable.active, .selectable:hover {
   background: #f8f8f8 !important;
   color:#000 !important;
-  border:1px solid #66ccff !important;
+  border:1px solid #00aaff !important;
 }
 
 .tab-content {
@@ -78,9 +78,9 @@
 }
 
 .btn-transparent:hover {
-  background-color:#66ccff;
+  background-color:#00aaff;
   color:#FFF !important;
-  border: 1px solid #66ccff;
+  border: 1px solid #00aaff;
 }
 
 .btn-transparent:hover:disabled {
@@ -91,9 +91,9 @@
 }
 
 .btn-outline-secondary:hover {
-  background-color:#66ccff;
+  background-color:#00aaff;
   color:#FFF !important;
-  border: 1px solid #66ccff;
+  border: 1px solid #00aaff;
 }
 
 .btn-outline-secondary:hover:disabled {
@@ -135,7 +135,7 @@
 
 .header-title {
   color: #fff;
-  background: #66ccff !important;
+  background: #00aaff !important;
 }
 
 .header-title .navbar-collapse .header-title-text .nav-item h2 {
@@ -180,7 +180,7 @@
 .dropdown-item:hover {
   padding: 0.5rem 1rem !important;
   cursor:pointer;
-  background: #66ccff;
+  background: #00aaff;
   color: #fff;
 }
 
@@ -258,7 +258,7 @@
 }
 
 .ui-autocomplete.ui-autocomplete-multiple .ui-autocomplete-multiple-container .ui-autocomplete-token {
-  background: #66ccff !important;
+  background: #00aaff !important;
 }
 
 .ui-autocomplete-multiple-container.ui-widget.ui-inputtext.ui-state-default.ui-corner-all.ng-star-inserted.ui-state-focus
@@ -303,7 +303,7 @@
 }
 
 .x-navigation li:hover {
-  background: #66ccff;
+  background: #00aaff;
   color: #fff;
   cursor: pointer;
   -webkit-transition: all 200ms ease;
@@ -324,7 +324,7 @@
 
 .bg-success {
     color: #495057;
-    background-color: #66ccff;
+    background-color: #00aaff;
 }
 
 .bg-success:houver {
@@ -340,32 +340,32 @@
 }
 
 .mat-primary .mat-option.mat-selected:not(.mat-option-disabled) {
-    color: #66ccff;
+    color: #00aaff;
 }
 
 .mat-primary .mat-pseudo-checkbox-checked, .mat-primary .mat-pseudo-checkbox-indeterminate {
-    background: #66ccff !important;
+    background: #00aaff !important;
 }
 
 .mat-select {
     font-family: 'Open Sans', 'sans-serif' !important;
-    color: #66ccff !important;
+    color: #00aaff !important;
 }
 
 .mat-form-field.mat-focused .mat-form-field-label {
-	  color: #66ccff !important;
+	  color: #00aaff !important;
 }
 
 .mat-form-field.mat-focused .mat-form-field-ripple {
-	  background-color: #66ccff !important;
+	  background-color: #00aaff !important;
 }
 
 .mat-form-field.mat-focused.mat-primary .mat-select-arrow {
-	  color: #66ccff !important;
+	  color: #00aaff !important;
 }
 
 .mat-option-custom:hover {
-	  background: #66ccff !important;
+	  background: #00aaff !important;
     color: #fff !important;
 }
 
