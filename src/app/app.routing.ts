@@ -6,6 +6,11 @@ import { SidebarComponent } from "./shared/sidebar/sidebar.component";
 import { HeaderComponent } from "./shared/header/header.component";
 import { ContentComponent } from "./shared/content/content.component";
 
+import { SiteHomeComponent } from "./site/home/home.component";
+import { SiteHeaderComponent } from "./site/header/header.component";
+import { SiteContentComponent } from "./site/content/content.component";
+import { SiteContactComponent } from "./site/contact/contact.component";
+
 import { LoginComponent } from './modules/login/login.component';
 
 /*
@@ -147,6 +152,16 @@ const appRoutes: Routes = [
 const routes: Routes = [
   {
     path: '',
+    component: SiteHomeComponent,
+    children: [
+      {
+        path: 'contact',
+        component: SiteContactComponent
+      }
+    ]
+  },
+  {
+    path: 'home',
     component: HomeComponent,
     data : {
       title: "header.title.home" ,

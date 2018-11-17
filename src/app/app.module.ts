@@ -20,6 +20,11 @@ import { SidebarComponent } from "./shared/sidebar/sidebar.component";
 import { HeaderComponent } from "./shared/header/header.component";
 import { ContentComponent } from "./shared/content/content.component";
 
+import { SiteHomeComponent } from "./site/home/home.component";
+import { SiteHeaderComponent } from "./site/header/header.component";
+import { SiteContentComponent } from "./site/content/content.component";
+import { SiteContactComponent } from "./site/contact/contact.component";
+
 import { LoginComponent } from './modules/login/login.component';
 
 // AoT requires an exported function for factories
@@ -34,6 +39,10 @@ export function HttpLoaderFactory(http: HttpClient) {
     SidebarComponent,
     HeaderComponent,
     ContentComponent,
+    SiteHomeComponent,
+    SiteHeaderComponent,
+    SiteContentComponent,
+    SiteContactComponent,
     LoginComponent
   ],
   imports: [

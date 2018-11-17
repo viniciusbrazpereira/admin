@@ -372,3 +372,34 @@
 .mat-option:first-child .mat-pseudo-checkbox{
     display: none;
 }
+
+/* PAGE SITE CONTAINER */
+.page-site-container {
+  width: 100%;
+  float: left;
+  min-height: 100%;
+  position: relative;
+  background: #FFF;
+  /* SIDEBAR */
+  /* END SIDEBAR */
+  /* CONTENT */
+  /* END CONTENT */
+  /* RTL CONTENT MODE */
+  /* END RTL CONTENT MODE */
+}
+
+.page-site-container .page-site-content {
+  min-height: 100%;
+  background: #FFF;
+  position: relative;
+  zoom: 1;
+}
+
+.page-site-container .page-site-content .page-site-content-wrap {
+  float: left;
+  width: 100%;
+  padding: 6px 15px 7px;
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 0px;
+  border-radius: 0px;
+}
