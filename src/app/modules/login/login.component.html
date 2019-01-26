@@ -1,0 +1,53 @@
+ <body>
+
+	<div class="login-container lightmode">
+
+		<div class="login-box animated fadeInDown">
+
+      <div class="login-logo"></div>
+
+			<div class="login-body" [formGroup]="loginForm">
+
+        <div class="login-title" translate>
+            <strong translate>{{ 'modules.login.title-strong'}}</strong>{{ 'modules.login.title'}}
+        </div>
+
+				<div class="form-group">
+					<div class="row">
+						<div class="col-md-12">
+							<input type="text" class="form-control" formControlName="username" placeholder="Usuário" />
+						</div>
+					</div>
+				</div>
+
+				<div class="form-group">
+					<div class="row">
+						<div class="col-md-12">
+							<input type="password" class="form-control" formControlName="password" placeholder="Senha" />
+						</div>
+					</div>
+				</div>
+
+				<div class="form-group">
+					<div class="row">
+						<div class="col-md-6">
+							<a href="#" class="btn btn-link btn-block" translate>{{ 'modules.login.forgot'}}</a>
+						</div>
+						<div class="col-md-6">
+							<button class="btn btn-default btn-block"
+                (click)="login($event)">
+                {{ 'modules.login.login' | translate}}
+              </button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="login-footer">
+				<div class="pull-left" translate>
+					{{ 'modules.login.footer'}}
+				</div>
+			</div>
+		</div>
+	</div>
+ </body>

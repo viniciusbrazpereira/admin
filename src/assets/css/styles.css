@@ -1,0 +1,416 @@
+  /* You can add global styles to this file, and also import other style files */
+  @import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+.loader-hidden {
+    visibility: hidden;
+}
+.spinner-overlay {
+  background-color: #FFF;
+  opacity: 0.5;
+  filter: alpha(opacity=50); /* For IE8 and earlier */
+}
+.spinner-message-container {
+  position: absolute;
+  top: 35%;
+  left: 0;
+  right: 0;
+  height: 0;
+  text-align: center;
+  z-index: 10001;
+  cursor: wait;
+}
+.spinner-message {
+  display: inline-block;
+  text-align: left;
+  color: #f5f5f5;
+  padding: 20px;
+  border-radius: 4px;
+  font-size: 20px;
+  font-weight: bold;
+  filter: alpha(opacity=100);
+  z-index: 10001;
+}
+.spinner-transformation-container {
+  position: absolute;
+  top: 35%;
+  left: 0;
+  right: 0;
+  height: 0;
+  text-align: center;
+  z-index: 10001;
+}
+
+
+
+.justify-content-center {
+    display: flex !important;
+    justify-content: center !important;
+}
+
+.list-group-item-dark {
+  background-color:#dadcde;
+}
+
+.selectable.active, .selectable:hover {
+  background: #f8f8f8 !important;
+  color:#000 !important;
+  border:1px solid #00aaff !important;
+}
+
+.tab-content {
+  padding: 8px;
+  border: 1px solid #dee2e6;
+  padding-top:32px;
+}
+
+.col-button {
+  padding-top:25px
+}
+
+.col-text {
+  padding-top:4px;
+}
+
+.btn-transparent {
+  background-color:transparent;
+  border: 1px solid #ccc;
+  border-radius:4px;
+}
+
+.btn-transparent:hover {
+  background-color:#00aaff;
+  color:#FFF !important;
+  border: 1px solid #00aaff;
+}
+
+.btn-transparent:hover:disabled {
+  background-color:transparent;
+  border: 1px solid #ccc;
+  color:#656d78 !important;
+  border-radius:4px;
+}
+
+.btn-outline-secondary:hover {
+  background-color:#00aaff;
+  color:#FFF !important;
+  border: 1px solid #00aaff;
+}
+
+.btn-outline-secondary:hover:disabled {
+  background-color:transparent;
+  border: 1px solid #ccc;
+  color:#656d78 !important;
+  border-radius:4px;
+}
+
+.btn-sm {
+  padding:2px 10px !important;
+  margin-left:4px;
+}
+
+.fa {
+  margin-right:0px !important;
+}
+
+.list-group-item {
+  padding: .75rem .75rem !important;
+}
+
+.card-header h6 {
+  line-height: 25px;
+}
+
+.card-header h6 .btn {
+  margin-right: 8px;
+}
+
+.logo-image img {
+  width: 180px;
+}
+
+.logo-image div {
+  clear: both;
+  color:#aaa;
+}
+
+.header-title {
+  color: #fff;
+  background: #00aaff !important;
+}
+
+.header-title .navbar-collapse .header-title-text .nav-item h2 {
+  margin-bottom: 0px !important;
+  margin-left: 12px !important;
+  color:#fff !important;
+}
+
+.header-title .navbar-collapse .navbar-nav .nav-item a:hover {
+  color:#fff !important
+}
+
+.form-control:disabled, .form-control[readonly] {
+  background-color:#f8f8f8;
+  color:#555;
+}
+
+.modal-lg {
+    max-width: 980px !important;
+}
+
+.modal-content {
+    border-radius: 0px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border-width: 0px;
+    width: 1180px !important;
+}
+
+
+.tab-content {
+    padding: 8px !important;
+    border: 1px solid #dadcde !important;
+    padding-top: 32px !important;
+}
+
+.dropdown-item {
+  padding: 0.5rem 1rem !important;
+  cursor:pointer;
+}
+
+.dropdown-item:hover {
+  padding: 0.5rem 1rem !important;
+  cursor:pointer;
+  background: #00aaff;
+  color: #fff;
+}
+
+.dropdown-item.disabled, .dropdown-item:disabled {
+    padding: 0.5rem 1rem !important;
+    cursor:pointer;
+    background: transparent;
+    color: #acb1b9;
+}
+
+.dropdown-menu {
+  padding:0px !important;
+}
+
+.dropdown-menu::after {
+  border:0px !important;
+}
+
+#upload_button {
+  display: inline-block;
+}
+
+#upload_button input[type=file] {
+  display:none;
+}
+
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:hover,
+.nav-tabs > li.active > a:focus,
+.nav-tabs > .dropdown.active.open > a:hover {
+    margin-right: 5px !important;
+    border: 0px !important;
+    font-size: 12px !important;
+    font-weight: bolder !important;
+    border-top: 2px solid transparent !important;
+    border-radius: 0px !important;
+    color: #333 !important;
+    -webkit-transition: all 200ms ease !important;
+    transition: all 200ms ease !important;
+    background: #dee2e6 !important;
+    padding: 9px 15px !important;
+}
+
+.nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover {
+    border-color: #e9ecef #e9ecef #dee2e6 !important;
+    cursor:pointer !important;
+}
+
+.nav-tabs > li:first-child > a {
+    border-radius: 5px 0px 0px 0px !important;
+}
+
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:hover,
+.nav-tabs > li.active > a:focus,
+.nav-tabs > .dropdown.active.open > a:hover {
+    color: #495057 !important;
+    background-color: #fff !important;
+    border: 1px solid transparent !important;
+    border-color: #e9ecef #e9ecef #dee2e6 !important;
+}
+
+.btn-outline-success.disabled, .btn-outline-success:disabled {
+    color: #a6d8a8;
+    background-color: transparent;
+    border-color: #a6d8a8;
+}
+
+.ui-widget{
+  width: 100% !important;
+}
+
+.ui-autocomplete-token{
+  font-size: 11px !important;
+}
+
+.ui-autocomplete.ui-autocomplete-multiple .ui-autocomplete-multiple-container .ui-autocomplete-token {
+  background: #00aaff !important;
+}
+
+.ui-autocomplete-multiple-container.ui-widget.ui-inputtext.ui-state-default.ui-corner-all.ng-star-inserted.ui-state-focus
+{
+    background: #FFFFFF !important;
+    border: 1px solid #C1C1C1 !important;
+    border-top-width: 1px;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    border-top-style: solid;
+    border-right-style: solid;
+    border-bottom-style: solid;
+    border-left-style: solid;
+    border-top-color: #d5d5d5;
+    border-right-color: #d5d5d5;
+    border-bottom-color: #d5d5d5;
+    border-left-color: #d5d5d5;
+    -moz-border-top-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    border-image-source: none;
+    border-image-slice: 100% 100% 100% 100%;
+    border-image-width: 1 1 1 1;
+    border-image-outset: 0 0 0 0;
+    border-image-repeat: stretch stretch;
+}
+
+.ui-autocomplete-multiple-container.ui-widget.ui-inputtext.ui-state-default.ui-corner-all.ng-star-inserted{
+  background: #F9F9F9 !important;
+  border: 1px solid #D5D5D5 !important;
+}
+
+.accordion-span:hover {
+  font-weight: bold;
+  color: #656d78;
+}
+
+.accordion-span{
+  color: #656d78;
+}
+
+.x-navigation li:hover {
+  background: #00aaff;
+  color: #fff;
+  cursor: pointer;
+  -webkit-transition: all 200ms ease;
+  -moz-transition: all 200ms ease;
+  -ms-transition: all 200ms ease;
+  -o-transition: all 200ms ease;
+  transition: all 200ms ease;
+}
+
+.ngb-progressbar{
+  cursor: pointer;
+}
+
+.progress {
+  background-color: #dcefdc !important;
+  border-color: #dcefdc !important;
+}
+
+.bg-success {
+    color: #495057 !important;
+    background-color: #00aaff !important;
+}
+
+.btn-success {
+    color: #495057 !important;
+    background-color: #00aaff !important;
+}
+
+.btn-success:houver {
+    color: #fff;
+    background-color: #005580 !important;
+}
+
+.bg-success:houver {
+    color: #fff;
+    background-color: #005580 !important;
+}
+
+.cdk-global-overlay-wrapper, .cdk-overlay-container {
+  z-index: 99999 !important;
+}
+
+.mat-form-field {
+    font-family: 'Open Sans', 'sans-serif' !important;
+}
+
+.mat-primary .mat-option.mat-selected:not(.mat-option-disabled) {
+    color: #00aaff;
+}
+
+.mat-primary .mat-pseudo-checkbox-checked, .mat-primary .mat-pseudo-checkbox-indeterminate {
+    background: #00aaff !important;
+}
+
+.mat-select {
+    font-family: 'Open Sans', 'sans-serif' !important;
+    color: #00aaff !important;
+}
+
+.mat-form-field.mat-focused .mat-form-field-label {
+	  color: #00aaff !important;
+}
+
+.mat-form-field.mat-focused .mat-form-field-ripple {
+	  background-color: #00aaff !important;
+}
+
+.mat-form-field.mat-focused.mat-primary .mat-select-arrow {
+	  color: #00aaff !important;
+}
+
+.mat-option-custom:hover {
+	  background: #00aaff !important;
+    color: #fff !important;
+}
+
+.mat-option:first-child .mat-pseudo-checkbox{
+    display: none;
+}
+
+/* PAGE SITE CONTAINER */
+.page-site-container {
+  width: 100%;
+  float: left;
+  min-height: 100%;
+  position: relative;
+  background: #FFF;
+  /* SIDEBAR */
+  /* END SIDEBAR */
+  /* CONTENT */
+  /* END CONTENT */
+  /* RTL CONTENT MODE */
+  /* END RTL CONTENT MODE */
+}
+
+.page-site-container .page-site-content {
+  min-height: 100%;
+  background: #FFF;
+  position: relative;
+  zoom: 1;
+}
+
+.page-site-container .page-site-content .page-site-content-wrap {
+  float: left;
+  width: 100%;
+  padding: 6px 15px 7px;
+  -moz-border-radius: 0px;
+  -webkit-border-radius: 0px;
+  border-radius: 0px;
+}

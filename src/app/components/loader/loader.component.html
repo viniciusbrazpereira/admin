@@ -1,0 +1,8 @@
+<div [class.loader-hidden]="!showLoader">
+    <div class="in modal-backdrop spinner-overlay" *ngIf="showBackdrop"></div>
+        <div class="spinner-message-container" aria-live="assertive" aria-atomic="true">
+        <div class="spinner-message" >
+            <img src="assets/img/loading-modal-bar.gif"/>    
+        </div>
+    </div>
+</div>

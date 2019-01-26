@@ -1,0 +1,54 @@
+<!-- MESSAGE BOX-->
+<div class="{{cssStyle}}" *ngIf="showMessage">
+    <div class="mb-container">
+        <div class="mb-middle">
+            <div class="mb-title">
+                <span class="{{icon}}"></span>                
+                <strong>&nbsp;{{title}}</strong>
+            </div>
+
+            <div class="mb-content">
+                <div *ngFor="let message of messages">
+                    <p>{{message}}</p><br/>
+                </div>
+            </div>
+
+            <div class="mb-footer">
+                <div class="pull-right">                    
+                    <button (click)="showMessage=false" 
+                            class="btn btn-default btn-lg mb-control-close">
+                        {{'button.type.close' | translate}}
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- END MESSAGE BOX-->
+
+<!-- MESSAGE BOX CONFIRM -->
+<div class="message-box" *ngIf="showConfirmMessage">
+    <div class="mb-container">
+        <div class="mb-middle">
+            <div class="mb-title">
+                <span class="fa fa-question-circle"></span>                
+                <strong>&nbsp;{{title}}</strong>
+            </div>
+
+            <div class="mb-content">
+                <p>{{message}}</p>
+            </div>
+
+            <div class="mb-footer">
+                <div class="pull-right">
+                    <button (click)="onConfirm()" 
+                            class="btn btn-success btn-lg">{{ 'shared.header.message-box-yes' | translate}}</button>
+
+                    <button (click)="onCancel()" 
+                            class="btn btn-default btn-lg mb-control-close">{{ 'shared.header.message-box-no' | translate}}</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- END MESSAGE BOX CONFIRM -->
