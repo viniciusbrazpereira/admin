@@ -11,6 +11,8 @@ import { SiteHeaderComponent } from "./site/header/header.component";
 import { SiteContentComponent } from "./site/content/content.component";
 import { SiteContactComponent } from "./site/contact/contact.component";
 
+import { SiteTeamComponent } from "./site/team/team.component";
+
 import { LoginComponent } from './modules/login/login.component';
 
 /*
@@ -155,8 +157,8 @@ const routes: Routes = [
     component: SiteHomeComponent,
     children: [
       {
-        path: 'contact',
-        component: SiteContactComponent
+        path: 'time',
+        component: SiteTeamComponent
       }
     ]
   },

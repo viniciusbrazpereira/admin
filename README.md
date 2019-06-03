@@ -47,5 +47,3 @@ public String crypt(String text) throws Exception {
         return encryptedString;
 		
 	}
-
-	

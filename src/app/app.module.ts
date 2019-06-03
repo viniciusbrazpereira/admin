@@ -35,7 +35,7 @@ import { SiteHomeComponent } from "./site/home/home.component";
 import { SiteHeaderComponent } from "./site/header/header.component";
 import { SiteContentComponent } from "./site/content/content.component";
 import { SiteContactComponent } from "./site/contact/contact.component";
-
+import { SiteTeamComponent } from "./site/team/team.component";
 import { LoginComponent } from './modules/login/login.component';
 
 // Loader
@@ -87,6 +87,7 @@ export function httpService(
     SiteContentComponent,
     SiteContactComponent,
     GlobalMessageComponent,
+    SiteTeamComponent,
     LoginComponent
   ],
   imports: [
