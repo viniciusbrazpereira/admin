@@ -86,6 +86,7 @@ export function httpService(
     SiteHeaderComponent,
     SiteContentComponent,
     SiteContactComponent,
+    GlobalMessageComponent,
     LoginComponent
   ],
   imports: [
