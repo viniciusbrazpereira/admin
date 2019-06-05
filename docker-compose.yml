@@ -1,0 +1,11 @@
+version: "3"
+services:
+   anvy-admin:
+      build:
+        context: .
+        dockerfile: Dockerfile
+      container_name: anvy-admin
+      restart: always
+      hostname: 'http://anvy.com.br'
+      ports:
+        - '8081:80'
